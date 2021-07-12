@@ -1,4 +1,7 @@
-function unzip_file($file, $destination) {
+<html>
+<body>
+
+<?php function unzip_file($file, $destination) {
 	// create object
 	$zip = new ZipArchive() ;
 	// open archive
@@ -11,3 +14,6 @@ function unzip_file($file, $destination) {
 	$zip->close();
 	echo 'Archive extracted to directory';
 }
+?>
+</body>
+</html>
